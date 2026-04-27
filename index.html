@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agropulse — Tarımda Veriyi Güce Dönüştür</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">◈</span>
+        Agropulse
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#stats">Veriler</a></li>
+        <li><a href="#product">Ürün</a></li>
+        <li><a href="#how">Nasıl Çalışır</a></li>
+        <li><a href="#dashboard">Demo</a></li>
+        <li><a href="#team">Ekip</a></li>
+        <li><a href="#contact" class="nav-cta">İletişim</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Akıllı Tarım Teknolojisi · 2024
+        </div>
+        <h1 class="hero-title reveal">
+          Tarımda Veriyi<br /><em>Güce Dönüştür</em>
+        </h1>
+        <p class="hero-desc reveal">
+          Agropulse, toprak sensörlerinden gerçek zamanlı veri toplayarak çiftçilere sulama ve gübreleme için hassas öneriler sunar. Kaynakları optimize et, verimi artır, geleceği ekim.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#dashboard" class="btn-primary">Demo'yu Gör <span>→</span></a>
+          <a href="#contact" class="btn-secondary">Yatırımcı Sunumu</a>
+        </div>
+        <div class="hero-trust reveal">
+          <span>✓ Gerçek Zamanlı İzleme</span>
+          <span>✓ %30 Su Tasarrufu</span>
+          <span>✓ Mobil Uygulama</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="dashboard-mock">
+          <div class="mock-header">
+            <div class="mock-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="mock-title">Agropulse Dashboard</span>
+            <span class="mock-live"><span class="live-dot"></span>Canlı</span>
+          </div>
+          <div class="mock-body">
+            <div class="mock-cards">
+              <div class="mock-card green">
+                <div class="mock-card-icon">💧</div>
+                <div class="mock-card-val">68%</div>
+                <div class="mock-card-label">Toprak Nemi</div>
+              </div>
+              <div class="mock-card brown">
+                <div class="mock-card-icon">🌱</div>
+                <div class="mock-card-val">7.2</div>
+                <div class="mock-card-label">pH Değeri</div>
+              </div>
+              <div class="mock-card teal">
+                <div class="mock-card-icon">⚗️</div>
+                <div class="mock-card-val">NPK</div>
+                <div class="mock-card-label">Optimal</div>
+              </div>
+            </div>
+            <div class="mock-chart-area">
+              <div class="mock-chart-label">Nem Trendi (7 Gün)</div>
+              <div class="mock-chart">
+                <svg viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#4a9b6f" stop-opacity="0.4"/>
+                      <stop offset="100%" stop-color="#4a9b6f" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0 55 C30 45 50 60 80 40 C110 20 140 50 170 35 C200 20 230 45 280 30 L280 80 L0 80 Z" fill="url(#chartGrad)"/>
+                  <path d="M0 55 C30 45 50 60 80 40 C110 20 140 50 170 35 C200 20 230 45 280 30" fill="none" stroke="#4a9b6f" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="280" cy="30" r="4" fill="#4a9b6f"/>
+                </svg>
+              </div>
+            </div>
+            <div class="mock-alerts">
+              <div class="mock-alert ok">
+                <span class="alert-icon">✔</span>
+                <span>Sulama gerekli değil</span>
+              </div>
+              <div class="mock-alert warn">
+                <span class="alert-icon">⚡</span>
+                <span>Azot takviyesi öneriliyor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stats">
+    <div class="stats-container">
+      <div class="section-label reveal">Kanıtlanmış Sonuçlar</div>
+      <h2 class="section-title reveal">Rakamlarla Agropulse</h2>
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-icon">💧</div>
+          <div class="stat-number" data-target="30">0</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">Su Tasarrufu</div>
+          <div class="stat-desc">Sensör bazlı sulama ile israfı önle</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-icon">🌾</div>
+          <div class="stat-number" data-target="20">0</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">Verim Artışı</div>
+          <div class="stat-desc">15–20% daha fazla hasat getirisi</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-icon">⚗️</div>
+          <div class="stat-number" data-target="50">0</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">Gübre Optimizasyonu</div>
+          <div class="stat-desc">20–50% daha az kimyasal kullanım</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-icon">📡</div>
+          <div class="stat-number" data-target="24">0</div>
+          <div class="stat-unit">/7</div>
+          <div class="stat-label">Gerçek Zamanlı İzleme</div>
+          <div class="stat-desc">Anlık veri akışı kesintisiz</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT -->
+  <section class="product" id="product">
+    <div class="product-container">
+      <div class="section-label reveal">Teknoloji</div>
+      <h2 class="section-title reveal">Sistem Bileşenleri</h2>
+      <p class="section-sub reveal">Entegre sensör ağı ve yapay zeka destekli analiz motoru ile toprağınızı her zamankinden daha iyi tanıyın.</p>
+      <div class="product-grid">
+        <div class="product-card reveal">
+          <div class="product-card-top">
+            <div class="product-icon">🔬</div>
+            <div class="product-tag">Sensör</div>
+          </div>
+          <h3>NPK Sensörü</h3>
+          <p>Azot, Fosfor ve Potasyum seviyelerini milisaniye hassasiyetle ölçer. Toprak beslenmesini optimize et, gereksiz gübrelemeyi önle.</p>
+          <div class="product-spec">Hassasiyet: ±0.5 mg/kg</div>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-card-top">
+            <div class="product-icon">💧</div>
+            <div class="product-tag">Sensör</div>
+          </div>
+          <h3>Toprak Nem Sensörü</h3>
+          <p>Volumetrik nem içeriğini sürekli izler. Fazla sulama ve kuraklık stresini önleyerek bitki gelişimini destekler.</p>
+          <div class="product-spec">Aralık: 0–100% VWC</div>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-card-top">
+            <div class="product-icon">🧪</div>
+            <div class="product-tag">Analiz</div>
+          </div>
+          <h3>pH Analizi</h3>
+          <p>Toprağın asitlik düzeyini anlık izler. pH dengesizliklerini erken tespit et, bitki besin alımını maksimize et.</p>
+          <div class="product-spec">Aralık: pH 0–14</div>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-card-top">
+            <div class="product-icon">📱</div>
+            <div class="product-tag">Yazılım</div>
+          </div>
+          <h3>Mobil Uygulama</h3>
+          <p>Tüm sensör verilerini tek ekranda görüntüle. Yapay zeka destekli öneriler, alarm bildirimleri ve geçmiş raporlar.</p>
+          <div class="product-spec">iOS & Android</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="how-bg"></div>
+    <div class="how-container">
+      <div class="section-label reveal">Süreç</div>
+      <h2 class="section-title reveal">Nasıl Çalışır?</h2>
+      <div class="how-steps">
+        <div class="how-step reveal">
+          <div class="step-num">01</div>
+          <div class="step-icon">📡</div>
+          <h3>Veri Toplama</h3>
+          <p>Tarlaya yerleştirilen sensörler NPK, nem ve pH verilerini sürekli olarak toplar ve bulut sistemine iletir.</p>
+          <div class="step-arrow">↓</div>
+        </div>
+        <div class="how-step reveal">
+          <div class="step-num">02</div>
+          <div class="step-icon">🧠</div>
+          <h3>Yapay Zeka Analizi</h3>
+          <p>Toplanan veriler makine öğrenmesi algoritmalarıyla işlenir. Geçmiş veriler ve hava koşulları entegre edilir.</p>
+          <div class="step-arrow">↓</div>
+        </div>
+        <div class="how-step reveal">
+          <div class="step-num">03</div>
+          <div class="step-icon">💡</div>
+          <h3>Akıllı Öneriler</h3>
+          <p>Çiftçiye mobil uygulama üzerinden kişiselleştirilmiş sulama ve gübreleme talimatları iletilir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD PREVIEW -->
+  <section class="dashboard-section" id="dashboard">
+    <div class="dashboard-container">
+      <div class="section-label reveal">Demo</div>
+      <h2 class="section-title reveal">Canlı Dashboard Önizlemesi</h2>
+      <p class="section-sub reveal">Gerçek zamanlı sensör verilerini, trendleri ve akıllı önerileri tek panelde yönetin.</p>
+      <div class="full-dashboard reveal">
+        <div class="fd-header">
+          <div class="fd-header-left">
+            <span class="fd-logo">◈ Agropulse</span>
+            <span class="fd-field">Tarla #1 — Konya, TR</span>
+          </div>
+          <div class="fd-header-right">
+            <span class="fd-live"><span class="live-dot"></span> Canlı Veri</span>
+            <span class="fd-time" id="fdTime"></span>
+          </div>
+        </div>
+        <div class="fd-body">
+          <!-- Left sidebar -->
+          <div class="fd-sidebar">
+            <div class="fd-nav-item active">📊 Genel Bakış</div>
+            <div class="fd-nav-item">💧 Sulama</div>
+            <div class="fd-nav-item">⚗️ Gübre</div>
+            <div class="fd-nav-item">📈 Raporlar</div>
+            <div class="fd-nav-item">⚙️ Ayarlar</div>
+          </div>
+          <!-- Main content -->
+          <div class="fd-main">
+            <div class="fd-kpis">
+              <div class="fd-kpi">
+                <div class="fd-kpi-icon" style="background:rgba(74,155,111,0.15);color:#4a9b6f">💧</div>
+                <div>
+                  <div class="fd-kpi-val">68%</div>
+                  <div class="fd-kpi-name">Toprak Nemi</div>
+                </div>
+                <div class="fd-kpi-badge ok">Normal</div>
+              </div>
+              <div class="fd-kpi">
+                <div class="fd-kpi-icon" style="background:rgba(139,90,43,0.15);color:#8b5a2b">🌡️</div>
+                <div>
+                  <div class="fd-kpi-val">22°C</div>
+                  <div class="fd-kpi-name">Toprak Sıcaklığı</div>
+                </div>
+                <div class="fd-kpi-badge ok">İyi</div>
+              </div>
+              <div class="fd-kpi">
+                <div class="fd-kpi-icon" style="background:rgba(74,155,111,0.15);color:#4a9b6f">🧪</div>
+                <div>
+                  <div class="fd-kpi-val">7.1</div>
+                  <div class="fd-kpi-name">pH Seviyesi</div>
+                </div>
+                <div class="fd-kpi-badge ok">Optimal</div>
+              </div>
+              <div class="fd-kpi">
+                <div class="fd-kpi-icon" style="background:rgba(229,165,42,0.15);color:#e5a52a">⚡</div>
+                <div>
+                  <div class="fd-kpi-val">Düşük N</div>
+                  <div class="fd-kpi-name">NPK Durumu</div>
+                </div>
+                <div class="fd-kpi-badge warn">Uyarı</div>
+              </div>
+            </div>
+
+            <div class="fd-charts">
+              <div class="fd-chart-card big">
+                <div class="fd-chart-title">7 Günlük Nem & pH Trendi</div>
+                <div class="fd-chart-wrap">
+                  <svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" class="fd-svg">
+                    <defs>
+                      <linearGradient id="nemGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#4a9b6f" stop-opacity="0.35"/>
+                        <stop offset="100%" stop-color="#4a9b6f" stop-opacity="0"/>
+                      </linearGradient>
+                      <linearGradient id="phGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#8b5a2b" stop-opacity="0.3"/>
+                        <stop offset="100%" stop-color="#8b5a2b" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    <!-- Grid lines -->
+                    <line x1="0" y1="30" x2="400" y2="30" stroke="#ffffff08" stroke-width="1"/>
+                    <line x1="0" y1="60" x2="400" y2="60" stroke="#ffffff08" stroke-width="1"/>
+                    <line x1="0" y1="90" x2="400" y2="90" stroke="#ffffff08" stroke-width="1"/>
+                    <!-- Nem area -->
+                    <path d="M0 75 C40 65 70 80 110 55 C150 30 190 70 230 50 C270 30 310 65 350 45 C370 35 385 40 400 38 L400 120 L0 120 Z" fill="url(#nemGrad)"/>
+                    <path d="M0 75 C40 65 70 80 110 55 C150 30 190 70 230 50 C270 30 310 65 350 45 C370 35 385 40 400 38" fill="none" stroke="#4a9b6f" stroke-width="2" stroke-linecap="round"/>
+                    <!-- pH area -->
+                    <path d="M0 85 C40 80 70 88 110 78 C150 68 190 82 230 72 C270 62 310 78 350 68 C370 63 385 65 400 62 L400 120 L0 120 Z" fill="url(#phGrad)"/>
+                    <path d="M0 85 C40 80 70 88 110 78 C150 68 190 82 230 72 C270 62 310 78 350 68 C370 63 385 65 400 62" fill="none" stroke="#8b5a2b" stroke-width="2" stroke-linecap="round" stroke-dasharray="6,3"/>
+                    <!-- dots -->
+                    <circle cx="400" cy="38" r="4" fill="#4a9b6f"/>
+                    <circle cx="400" cy="62" r="4" fill="#8b5a2b"/>
+                    <!-- X labels -->
+                    <text x="0" y="118" fill="#ffffff40" font-size="9" font-family="DM Sans">Pzt</text>
+                    <text x="55" y="118" fill="#ffffff40" font-size="9" font-family="DM Sans">Sal</text>
+                    <text x="110" y="118" fill="#ffffff40" font-size="9" font-family="DM Sans">Çar</text>
+                    <text x="165" y="118" fill="#ffffff40" font-size="9" font-family="DM Sans">Per</text>
+                    <text x="220" y="118" fill="#ffffff40" font-size="9" font-family="DM Sans">Cum</text>
+                    <text x="275" y="118" fill="#ffffff40" font-size="9" font-family="DM Sans">Cmt</text>
+                    <text x="330" y="118" fill="#ffffff40" font-size="9" font-family="DM Sans">Paz</text>
+                  </svg>
+                  <div class="fd-legend">
+                    <span><span class="leg-dot" style="background:#4a9b6f"></span>Nem</span>
+                    <span><span class="leg-dot" style="background:#8b5a2b"></span>pH</span>
+                  </div>
+                </div>
+              </div>
+              <div class="fd-chart-card small">
+                <div class="fd-chart-title">NPK Seviyeleri</div>
+                <div class="fd-bars">
+                  <div class="fd-bar-row">
+                    <span>N</span>
+                    <div class="fd-bar-track">
+                      <div class="fd-bar-fill" style="width:35%;background:#e5a52a"></div>
+                    </div>
+                    <span>35%</span>
+                  </div>
+                  <div class="fd-bar-row">
+                    <span>P</span>
+                    <div class="fd-bar-track">
+                      <div class="fd-bar-fill" style="width:72%;background:#4a9b6f"></div>
+                    </div>
+                    <span>72%</span>
+                  </div>
+                  <div class="fd-bar-row">
+                    <span>K</span>
+                    <div class="fd-bar-track">
+                      <div class="fd-bar-fill" style="width:58%;background:#4a9b6f"></div>
+                    </div>
+                    <span>58%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fd-recommendations">
+              <div class="fd-rec-title">🤖 Yapay Zeka Önerileri</div>
+              <div class="fd-rec-list">
+                <div class="fd-rec ok">
+                  <span class="rec-icon">✔</span>
+                  <div>
+                    <strong>Sulama Gerekmez</strong>
+                    <span>Toprak nemi optimum aralıkta (%65–75)</span>
+                  </div>
+                </div>
+                <div class="fd-rec warn">
+                  <span class="rec-icon">⚡</span>
+                  <div>
+                    <strong>Azot Takviyesi Önerilir</strong>
+                    <span>10 kg/da üre uygulaması tavsiye edilir</span>
+                  </div>
+                </div>
+                <div class="fd-rec info">
+                  <span class="rec-icon">ℹ</span>
+                  <div>
+                    <strong>Sonraki Sulama</strong>
+                    <span>2 gün sonra, sabah 06:00'da planlandı</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="team-container">
+      <div class="section-label reveal">Ekip</div>
+      <h2 class="section-title reveal">Agropulse'u Kuranlar</h2>
+      <p class="section-sub reveal">Mühendislik, yazılım ve mekanik disiplinlerini birleştiren çok yönlü bir kurucu ekip.</p>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar">ZŞ</div>
+          <h3>Zeynep Şener</h3>
+          <div class="team-role">Donanım Mühendisi</div>
+          <p>Sensör entegrasyonu, devre tasarımı ve IoT sistemlerin geliştirilmesinden sorumlu.</p>
+          <div class="team-tags">
+            <span>IoT</span><span>Sensör</span><span>Donanım</span>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar">EFD</div>
+          <h3>Ecrin Feyza Dündar</h3>
+          <div class="team-role">Yazılım Geliştirici</div>
+          <p>Mobil uygulama, bulut altyapısı ve yapay zeka analiz motorunun mimarından sorumlu.</p>
+          <div class="team-tags">
+            <span>Mobil</span><span>AI/ML</span><span>Backend</span>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar">MH</div>
+          <h3>Melek Hamo</h3>
+          <div class="team-role">Mekanik Mühendis</div>
+          <p>Sensör muhafazaları, tarla prototipleme ve fiziksel sistem tasarımından sorumlu.</p>
+          <div class="team-tags">
+            <span>Prototip</span><span>Tasarım</span><span>Mekanik</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="section-label reveal">İletişim</div>
+      <h2 class="section-title reveal">Birlikte Tarımı<br />Dönüştürelim</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">Yatırımcı sunumu, iş birliği veya ürün demo talebi için bizimle iletişime geçin.</p>
+          <div class="contact-detail">
+            <span class="contact-icon">✉</span>
+            <div>
+              <div class="contact-detail-label">E-posta</div>
+              <a href="mailto:otüken.en385455@gmail.com">ötüken.en385455@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">📍</span>
+            <div>
+              <div class="contact-detail-label">Konum</div>
+              <span>Türkiye</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">🚀</span>
+            <div>
+              <div class="contact-detail-label">Yatırımcılar için</div>
+              <span>Pitch deck & demo mevcut</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Ad Soyad</label>
+              <input type="text" placeholder="Adınızı girin" required />
+            </div>
+            <div class="form-group">
+              <label>E-posta</label>
+              <input type="email" placeholder="E-posta adresiniz" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Konu</label>
+            <select>
+              <option>Yatırımcı Görüşmesi</option>
+              <option>Ürün Demo Talebi</option>
+              <option>İş Birliği</option>
+              <option>Diğer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Mesaj</label>
+            <textarea placeholder="Mesajınızı buraya yazın..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Gönder <span>→</span></button>
+          <div class="form-success" id="formSuccess">✓ Mesajınız iletildi! En kısa sürede dönüş yapacağız.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-icon">◈</span> Agropulse
+        <p>Tarımda Veriyi Güce Dönüştür</p>
+      </div>
+      <div class="footer-copy">
+        © 2024 Agropulse. Tüm hakları saklıdır.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
